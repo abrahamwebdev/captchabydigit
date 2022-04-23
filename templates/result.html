@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}
+    Captcha Solved
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="columns">
+        <div class="column is-one-fifth">
+        </div>
+
+
+
+        <div class="column is-three-fifths">
+            <div class="section">
+            	<p class="block title"># </p>
+            {% if response %}
+                {% if success %}
+            <p class="alert alert-success m-4 text-center">{{ response }}</p>
+                {% else %}
+            <p class="alert alert-success m-4 text-center">{{ response }}</p>
+                {% endif %}
+            {% endif %}
+            
+            </div>    
+        </div>
+        
+
+
+        <div class="column is-one-fifth">
+		</div>
+	</div>
+    </div>
+{% endblock %}
